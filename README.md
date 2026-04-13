@@ -1,14 +1,14 @@
 # Link Failure Detection and Recovery
 
-A software-defined networking project that detects link failures in real time and automatically reroutes traffic — no human intervention required.
+A software-defined networking project that detects link failures in real time and automatically reroutes traffic, no human intervention required.
 
 ---
 
 ## The Problem
 
-Networks fail. Cables get cut, ports go down, hardware breaks. In traditional networks, recovery is slow and manual. In an SDN-controlled network, the controller sees everything — and can react instantly.
+Networks fail. Cables get cut, ports go down, hardware breaks. In traditional networks, recovery is slow and manual. In an SDN-controlled network, the controller sees everything and can react instantly.
 
-This project demonstrates exactly that. When a link goes down, the Ryu controller detects the failure, tears out the old flow rules, and pushes new ones through a backup path — all before a single ping is dropped.
+This project demonstrates exactly that. When a link goes down, the Ryu controller detects the failure, tears out the old flow rules, and pushes new ones through a backup path all before a single ping is dropped.
 
 ---
 
@@ -25,7 +25,7 @@ h1 --- s1 --- s2 --- h2
 **Primary path:** h1 → s1 → s2 → h2  
 **Backup path:** h1 → s1 → s3 → s2 → h2
 
-The Ryu controller pre-installs explicit flow rules on all switches at startup. When the s1-s2 link fails, the controller detects the port status change, deletes the existing flow rules, and installs higher-priority backup rules through s3 — restoring connectivity immediately.
+The Ryu controller pre-installs explicit flow rules on all switches at startup. When the s1-s2 link fails, the controller detects the port status change, deletes the existing flow rules, and installs higher-priority backup rules through s3 restoring connectivity immediately.
 
 When the link comes back up, the controller detects the recovery and switches back to the primary path.
 
