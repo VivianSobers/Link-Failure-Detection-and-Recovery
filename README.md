@@ -144,6 +144,39 @@ ACTIVE PATH: h1 -> s1 -> s2 -> h2 (Primary)
 
 ---
 
+## Proof of Execution
+
+### Network Startup — Primary Path Active
+![Network Startup](screenshots/1.png)
+
+### Scenario 1 — Normal pingall (0% dropped)
+![Normal pingall](screenshots/2.png)
+
+### Link Failure Detected — Switching to Backup Path
+![Link Failure](screenshots/3.png)
+
+### Scenario 2 — pingall During Link Failure (0% dropped)
+![pingall during failure](screenshots/4.png)
+
+### Link Restored — Back to Primary Path
+![Link Restored](screenshots/5.png)
+
+### iperf3 — Normal Operation (15.2 Gbits/sec)
+![iperf3 normal](screenshots/6.png)
+
+### iperf3 — During Link Failure (16.8 Gbits/sec)
+![iperf3 failure](screenshots/7.png)
+
+### Wireshark — ICMP Capture
+![Wireshark all](screenshots/8.png)
+
+### Wireshark — ICMP Filtered (Normal)
+![Wireshark filtered](screenshots/9.png)
+
+### Wireshark — ICMP Filtered (During Failure)
+![Wireshark during failure](screenshots/10.png)
+
+---
 ## Author
 
 Vivian Sobers E
