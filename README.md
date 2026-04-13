@@ -44,7 +44,7 @@ When the link comes back up, the controller detects the recovery and switches ba
 
 ### Prerequisites
 
-- Ubuntu 24.04 (native, not VM)
+- Ubuntu 24.04 (native or VM)
 - Python 3.11
 - Mininet 2.3.0
 - Ryu 4.34
