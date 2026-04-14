@@ -1,5 +1,16 @@
 # Link Failure Detection and Recovery
 
+![Networking](https://img.shields.io/badge/Domain-Computer%20Networks-1E90FF?style=for-the-badge)
+![SDN](https://img.shields.io/badge/SDN-Software%20Defined%20Networking-4169E1?style=for-the-badge)
+![Controller](https://img.shields.io/badge/Controller-Ryu-6A5ACD?style=for-the-badge)
+![Emulation](https://img.shields.io/badge/Emulator-Mininet-20B2AA?style=for-the-badge)
+![Protocol](https://img.shields.io/badge/OpenFlow-1.3-4682B4?style=for-the-badge)
+![Switching](https://img.shields.io/badge/Open%20vSwitch-OVS-2E8B57?style=for-the-badge)
+![Validation](https://img.shields.io/badge/Validation-Wireshark%20%7C%20iperf3-FF8C00?style=for-the-badge)
+![Recovery](https://img.shields.io/badge/Recovery-Automatic%20Failover-success?style=for-the-badge)
+![Packet Loss](https://img.shields.io/badge/Packet%20Loss-0%25-brightgreen?style=for-the-badge)
+![Language](https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
 A software-defined networking project that detects link failures in real time and automatically reroutes traffic, no human intervention required.
 
 ---
